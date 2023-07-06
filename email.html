@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="color-scheme" content="light dark" />
-    <meta name="supported-color-schemes" content="light dark" /> -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>HTML Email Template</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
@@ -23,6 +23,7 @@
       }
       a {
         text-decoration: none;
+        color: #e8fbfa;
       }
       @media screen and (max-width: 599.98px) {
         .two-columns .padding,
@@ -67,8 +68,20 @@
       }
 
       /* Custom Dark Mode Colors */
-
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
       @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table {
+          background: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+        .darkmode-transparent {
+          background: transparent !important;
+        }
       }
     </style>
 
@@ -147,18 +160,16 @@
         >
           <tr>
             <td style="padding: 0">
-              <table width="100%" style="border-spacing: 0" role="presentation">
+              <table
+                width="100%"
+                style="border-spacing: 0; background: #eaf6fb"
+                role="presentation"
+              >
                 <tr>
                   <td height="3" style="background: #21c6b8"></td>
                 </tr>
                 <tr>
-                  <td
-                    style="
-                      background: #ebf5fa;
-                      text-align: center;
-                      padding: 10px 0 8px 0;
-                    "
-                  >
+                  <td style="text-align: center; padding: 10px 0 8px 0">
                     <a href="https://example.com" target="_blank">
                       <img
                         src="https://i.ibb.co/bPLzh61/circle-facebook.png"
@@ -214,15 +225,13 @@
           </tr>
           <tr>
             <td style="padding: 0">
-              <table width="100%" style="border-spacing: 0" role="presentation">
+              <table
+                width="100%"
+                style="border-spacing: 0; background: #fafdfe"
+                role="presentation"
+              >
                 <tr>
-                  <td
-                    style="
-                      background: #fafdfe;
-                      padding: 20px 0;
-                      text-align: center;
-                    "
-                  >
+                  <td style="padding: 20px 0; text-align: center">
                     <a href="https://example.com" target="_blank">
                       <img
                         src="https://i.ibb.co/rx31TX7/html-email.png"
@@ -579,7 +588,7 @@
                           style="padding: 15px 20px; background: #1e5d7b"
                         >
                           <table
-                            class="content"
+                            class="content darkmode-transparent"
                             style="border-spacing: 0; text-align: center"
                             role="presentation"
                           >
