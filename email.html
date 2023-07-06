@@ -25,8 +25,45 @@
         text-decoration: none;
       }
       @media screen and (max-width: 599.98px) {
+        .two-columns .padding,
+        .two-third-columns .padding,
+        .three-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        img.two-col-img {
+          width: 300px !important;
+          max-width: 300px !important;
+        }
+        .two-third-columns .padding.first {
+          padding-bottom: 0 !important;
+        }
+        .two-third-columns .padding.last {
+          padding-top: 0 !important;
+        }
+        img.one-third-col-img,
+        img.three-col-img-last {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+        .two-third-columns .content {
+          text-align: center !important;
+        }
+        .banner {
+          height: auto !important;
+          padding-top: 40px !important;
+          padding-bottom: 60px !important;
+        }
       }
       @media screen and (max-width: 399.98px) {
+        img.three-col-img {
+          width: 200px !important;
+          max-width: 200px !important;
+        }
+        .banner {
+          padding-top: 10px !important;
+          padding-bottom: 40px !important;
+        }
       }
 
       /* Custom Dark Mode Colors */
@@ -202,6 +239,7 @@
           <!-- START BANNER -->
           <tr>
             <td
+              class="banner"
               background="https://i.ibb.co/hMhVbjT/stats2.gif"
               width="600"
               height="332"
@@ -346,6 +384,7 @@
                               <td>
                                 <a href="https://example.com" target="_blank">
                                   <img
+                                    class="two-col-img"
                                     src="https://i.ibb.co/Tmg3qbV/man-teal.jpg"
                                     alt="man standing in front of teal brick wall"
                                     width="260"
@@ -431,6 +470,7 @@
                               <td>
                                 <a href="https://example.com" target="_blank">
                                   <img
+                                    class="two-col-img"
                                     src="https://i.ibb.co/nQn29Sg/woman-teal.jpg"
                                     alt="man standing in front of teal brick wall"
                                     width="260"
@@ -547,6 +587,7 @@
                               <td>
                                 <a href="https://example.com" target="_blank">
                                   <img
+                                    class="one-third-col-img"
                                     src="https://i.ibb.co/j852yw3/teal-circle.png"
                                     alt="man standing in front of teal brick wall"
                                     width="160"
